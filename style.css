@@ -96,3 +96,91 @@ text-align: center;
     background-color: #282e34;
     color: #ddd;
 }
+
+
+
+
+/* Default styles are mobile-first */
+
+/* Medium devices (tablets, 600px and up) */
+@media (min-width: 600px) {
+    .ptext {
+      font-size: 32px;
+      letter-spacing: 10px;
+
+    }
+  .media-text{
+    font-size: 25px;
+
+  }
+    .section {
+      padding: 60px 100px;
+    }
+  }
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media (min-width: 992px) {
+    .ptext {
+      font-size: 40px;
+      letter-spacing: 12px;
+    }
+  
+    .section {
+      padding: 80px 150px;
+    }
+  
+    .pimg1,
+    .pimg2,
+    .pimg3,
+    .pimg-reapet1 {
+      background-attachment: fixed;
+    }
+  }
+  
+  /* Extra small screens (phones below 600px) */
+  @media (max-width: 599px) {
+    .ptext {
+      font-size: 20px;
+      letter-spacing: 5px;
+      padding: 0 10px;
+    }
+  
+    .section {
+      padding: 40px 20px;
+    }
+  
+    .pimg1,
+    .pimg2,
+    .pimg3,
+    .pimg-reapet1 {
+      background-attachment: scroll; /* Fixed not supported well on mobile */
+    }
+  }
+  
+
+@media (max-width: 360px) {
+  .ptext {
+    font-size: 18px;
+    letter-spacing: 3px;
+    padding: 0 10px;
+  }
+
+  .section {
+    padding: 30px 15px;
+  }
+
+  .textbg {
+    padding: 15px;
+  }
+
+  .pimg1,
+  .pimg2,
+  .pimg3,
+  .pimg-reapet1 {
+    background-attachment: scroll; /* For smooth scrolling on small screens */
+  }
+}
+
+  
+
+
